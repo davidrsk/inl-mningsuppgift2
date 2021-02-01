@@ -9,7 +9,11 @@ namespace XUnitTestProject1
         [Fact]
         public void Test1()
         {
-            Assert.Equal(5, ConvertToNumber.TextConverter("five"));
+            C4 c4 = new C4();
+            c4.PlayNote();
+            Console.Beep(261, 400);
+            
+            //Assert.(C4.PlayNote());
         }
     }
 }

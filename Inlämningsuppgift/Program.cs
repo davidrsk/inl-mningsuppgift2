@@ -69,6 +69,7 @@ namespace Inlämningsuppgift
                     }
                     catch (IndexOutOfRangeException e) {
                         // något har gått snett
+                        Console.WriteLine(e.Message);
                     }
                 }
                 //när du trycker på vänsterpil..

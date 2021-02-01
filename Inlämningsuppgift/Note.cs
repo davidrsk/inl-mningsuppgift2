@@ -4,14 +4,14 @@ using System.Text;
 
 namespace Inlämningsuppgift
 {
-    class Note
+    public class Note
     {
         public virtual void PlayNote()
         {
             //metod som ärvs genom class Note till varje note/ton
         }
     }
-    class C4 : Note
+    public class C4 : Note
     {
         public override void PlayNote()
         {
