@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30711.63
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inlämningsuppgift", "Inlämningsuppgift\Inlämningsuppgift.csproj", "{F24E5F27-DC5B-4C8B-A95D-DFD63BC692C3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Inlämningsuppgift", "Inlämningsuppgift\Inlämningsuppgift.csproj", "{F24E5F27-DC5B-4C8B-A95D-DFD63BC692C3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XUnitTestProject1", "XUnitTestProject1\XUnitTestProject1.csproj", "{E53AA328-3B36-4E61-B6AE-4B03E9773C19}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{F24E5F27-DC5B-4C8B-A95D-DFD63BC692C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F24E5F27-DC5B-4C8B-A95D-DFD63BC692C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F24E5F27-DC5B-4C8B-A95D-DFD63BC692C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E53AA328-3B36-4E61-B6AE-4B03E9773C19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E53AA328-3B36-4E61-B6AE-4B03E9773C19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E53AA328-3B36-4E61-B6AE-4B03E9773C19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E53AA328-3B36-4E61-B6AE-4B03E9773C19}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

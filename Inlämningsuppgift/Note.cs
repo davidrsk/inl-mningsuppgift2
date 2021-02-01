@@ -8,7 +8,7 @@ namespace Inlämningsuppgift
     {
         public virtual void PlayNote()
         {
-
+            //metod som ärvs genom class Note till varje note/ton
         }
     }
     class C4 : Note

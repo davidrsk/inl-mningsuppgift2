@@ -20,6 +20,8 @@ namespace Inlämningsuppgift
     {
         static void Main(string[] args)
         {
+            //Tangenterna 
+
             Console.WriteLine("|    |     |  |     |   |    |     |  |     |  |     |  |    |     |");
             Console.WriteLine("|    |     |  |     |   |    |     |  |     |  |     |  |    |     |");
             Console.WriteLine("|    |     |  |     |   |    |     |  |     |  |     |  |    |     |");
@@ -29,8 +31,10 @@ namespace Inlämningsuppgift
             Console.WriteLine("|       |       |       |       |       |       |       |       |   ");
             Console.WriteLine("|_______|_______|_______|_______|_______|_______|_______|_______|___");
 
+            //antalet positioner för varje tangent
             int[] position = new int[13];
 
+            //Varje positions index
             position[0] = 4;
             position[1] = 8;
             position[2] = 12;
@@ -47,23 +51,27 @@ namespace Inlämningsuppgift
 
             int index = 0;
 
+            //startposition
             Console.CursorLeft = 4;
 
 
             while (true)
             {
+                //ReadKey - en metod som läser in tryck av tangent
                 var cursor_movement = Console.ReadKey(true);
+                //vad som händer när du trycker på högerpil..
                 if (cursor_movement.Key == ConsoleKey.RightArrow)
                 {
-
-
-                    if (index < 12)
+                    try
                     {
                         index++;
                         Console.CursorLeft = position[index];
                     }
+                    catch (IndexOutOfRangeException e) {
+                        // något har gått snett
+                    }
                 }
-
+                //när du trycker på vänsterpil..
                 if (cursor_movement.Key == ConsoleKey.LeftArrow)
                 {
 
@@ -74,6 +82,7 @@ namespace Inlämningsuppgift
                     }
                 }
 
+                // vid x position, spela y ton
                 if (index == 0)
                 {
                     C4 c4 = new C4();
@@ -158,38 +167,6 @@ namespace Inlämningsuppgift
         }
     }
 }
-
-
-
-
-
-
-
-                // string[] note_names = new string[12];
-                // note_names[0] == Console.Beep(220, 1000)
-                // note_names[1] == Console.Beep(233, 1000)
-                // note_names[2] == Console.Beep(247, 1000)
-                // note_names[3] == Console.Beep(262, 1000)
-                // note_names[4] == Console.Beep(277, 1000)
-                // note_names[5] == Console.Beep(294, 1000)
-                // note_names[6] == Console.Beep(311, 1000)
-                // note_names[8] == Console.Beep(330, 1000)
-                // note_names[9] == Console.Beep(349, 1000)
-                // note_names[10] == Console.Beep(370, 1000)
-                // note_names[11] == Console.Beep(392, 1000)
-                // note_names[12] == Console.Beep(415, 1000)
-
-                /*
-                char[,] canvas = new char[3, 3];
-                int x = 1;
-                int y = 1;
-                canvas[x, y] = '*';
-
-                // ___   [0,0] [1,0] [2,0]
-                // _*_   [0,1] [1,1] [2,1]
-                // ___   [0,2] [1,2] [2,2]
-                */
-
             
         
 
