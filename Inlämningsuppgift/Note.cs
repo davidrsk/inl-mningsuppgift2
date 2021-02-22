@@ -13,9 +13,9 @@ namespace Inlämningsuppgift
     }
     public class C4 : Note
     {
-        public override void PlayNote()
+        public override void PlayNote() //beep(x, y) en metod där x = frekvens, y = duration
         {
-            Console.Beep(261, 400);
+            Console.Beep(261, 400); 
         }
     }
     class CSharp4 : Note
